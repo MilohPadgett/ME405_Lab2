@@ -18,7 +18,7 @@ class MotorDriver:
     This class implements a motor driver for an ME405 kit. 
     """
 
-    def __init__ (self, en_pin: pyb.Pin, in1pin: pyb.Pin, in2pin: pyb.Pin, timer: pyb.Timer):
+    def __init__ (self, en_pin: pyb.Pin, in1pin: pyb.Pin, in2pin: pyb.Pin, timer: pyb.Timer, polarity: bool):
         """! 
         Creates a motor driver by initializing GPIO
         pins and turning off the motor for safety. 
@@ -32,6 +32,7 @@ class MotorDriver:
         self.in1pin = in1pin
         self.in2pin = in2pin
         self.timer = timer
+        self.polarity = polarity
 
         #Disable the motor to begin
         self.en_pin.value(0)
@@ -53,13 +54,14 @@ class MotorDriver:
                cycle of the voltage sent to the motor 
         """
         #Set motor output for valid positive 'level's
-        if(level > 0 and level <=100):
-            self.in1ch.pulse_width_percent(level)
+        out = level if self.polarity else level*-1
+        if(out > 0 and out <=100):
+            self.in1ch.pulse_width_percent(abs(out))
             self.in2ch.pulse_width_percent(0)
             self.en_pin(1)
         #Set motor output for valid negative 'level's
-        elif(level < 0 and level >= -100):
-            self.in2ch.pulse_width_percent(abs(level))
+        elif(out < 0 and out >= -100):
+            self.in2ch.pulse_width_percent(abs(out))
             self.in1ch.pulse_width_percent(0)
             self.en_pin(1)
         #Disable the motor on all other values

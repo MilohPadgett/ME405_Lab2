@@ -55,7 +55,7 @@ class EncoderReader:
         delta = self.cur-self.prev
         #calculate over/underflow limit
         max_change = (2**16 + 1) / 2
-        print(f"Cur: {self.cur} Delta: {delta} Max: {max_change}")
+        #print(f"Cur: {self.cur} Delta: {delta} Max: {max_change}")
         #Underflow case
         if(delta > max_change):
             delta -= (2**16 +1)
@@ -67,6 +67,7 @@ class EncoderReader:
         self.ticks+=delta
         #store current in previous    
         self.prev = self.cur
+        
 
     def zero(self):
         """!
