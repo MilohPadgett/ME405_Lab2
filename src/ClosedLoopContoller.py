@@ -18,17 +18,23 @@ TODO: A method set_Kp() to set the control gain.
 @date 30-Jan-2023 Original File
 """
 
+import pyb 
+
 class PController:
     '''!
-
     @param gain 
     @param setpoint
     '''
-    def __init__(self):
-        pass
-    def run(self):
-        pass
-    def set_setpoint(self):
-        pass
-    def set_Kp(self):
-        pass
+    def __init__(self, gain, target):
+        self.gain = gain
+        self.target = target
+
+    def run(self, actual):
+        err = self.target - actual
+        return self.gain*err
+
+    def set_setpoint(self, new_target):
+        self.target = new_target
+
+    def set_Kp(self, new_gain):
+        self.gain = new_gain
