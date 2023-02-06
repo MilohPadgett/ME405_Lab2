@@ -65,12 +65,14 @@ class PController:
     def set_setpoint(self, new_target):
         """!
         Set a new target position.
+        @param new_target the new target tick value to reach
         """
         self.target = new_target
 
     def set_Kp(self, new_gain):
         """!
         Set a new Kp.
+        @param new_gain the new gain to be set
         """
         self.gain = new_gain
 
