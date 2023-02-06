@@ -22,10 +22,11 @@ class MotorDriver:
         """! 
         Creates a motor driver by initializing GPIO
         pins and turning off the motor for safety. 
-        @param en_pin (Set the enable pin for the motor)
-        @param in1pin (Set the in1 pin for the motor)
-        @param in2pin (Set the in2 pin for the motor)
-        @param timer  (Sets the timer for the motor)
+        @param en_pin Set the enable pin for the motor
+        @param in1pin Set the in1 pin for the motor
+        @param in2pin Set the in2 pin for the motor
+        @param timer  Sets the timer for the motor
+        @param polarity Switch polarity if necessary
         """
         #Asign this drivers pins and timer
         self.en_pin = en_pin

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_motor_driver_1_1_motor_driver.ht
 </div><!--header-->
 <div class="contents">
 
-<p>This class implements a motor driver for an ME405 kit.  
+<p>This class implements a MotorDriver for an ME405 kit.  
  <a href="class_motor_driver_1_1_motor_driver.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -135,7 +135,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0a77bbba089ec28deb90fccc9e078460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements a motor driver for an ME405 kit. </p>
+<div class="textblock"><p>This class implements a MotorDriver for an ME405 kit. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af888ee54f3e31b8c29fb778f679409fa" name="af888ee54f3e31b8c29fb778f679409fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af888ee54f3e31b8c29fb778f679409fa">&#9670;&#160;</a></span>__init__()</h2>
@@ -190,10 +190,11 @@ Public Attributes</h2></td></tr>
 <p>Creates a motor driver by initializing GPIO pins and turning off the motor for safety. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">en_pin</td><td>(Set the enable pin for the motor) </td></tr>
-    <tr><td class="paramname">in1pin</td><td>(Set the in1 pin for the motor) </td></tr>
-    <tr><td class="paramname">in2pin</td><td>(Set the in2 pin for the motor) </td></tr>
-    <tr><td class="paramname">timer</td><td>(Sets the timer for the motor) </td></tr>
+    <tr><td class="paramname">en_pin</td><td>Set the enable pin for the motor </td></tr>
+    <tr><td class="paramname">in1pin</td><td>Set the in1 pin for the motor </td></tr>
+    <tr><td class="paramname">in2pin</td><td>Set the in2 pin for the motor </td></tr>
+    <tr><td class="paramname">timer</td><td>Sets the timer for the motor </td></tr>
+    <tr><td class="paramname">polarity</td><td>Switch polarity if necessary </td></tr>
   </table>
   </dd>
 </dl>

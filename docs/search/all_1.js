@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['encoderreader_0',['EncoderReader',['../class_encoder_reader_1_1_encoder_reader.html',1,'EncoderReader']]],
-  ['encoderreader_2epy_1',['EncoderReader.py',['../_encoder_reader_8py.html',1,'']]]
+  ['control_5ftest_0',['control_test',['../main_8py.html#abf8b38971c3f94dbd45da10e64b70319',1,'main']]]
 ];

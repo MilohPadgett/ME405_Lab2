@@ -97,26 +97,32 @@ $(document).ready(function(){initNavTree('class_closed_loop_contoller_1_1_p_cont
   <div class="headertitle"><div class="title">ClosedLoopContoller.PController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class implements a ClosedLoopController for an ME405 kit.  
+ <a href="class_closed_loop_contoller_1_1_p_controller.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a078d6e4098cdbafacabc162d927a134e"><td class="memItemLeft" align="right" valign="top"><a id="a078d6e4098cdbafacabc162d927a134e" name="a078d6e4098cdbafacabc162d927a134e"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, gain, target)</td></tr>
+<tr class="memitem:a078d6e4098cdbafacabc162d927a134e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closed_loop_contoller_1_1_p_controller.html#a078d6e4098cdbafacabc162d927a134e">__init__</a> (self, gain, target)</td></tr>
 <tr class="separator:a078d6e4098cdbafacabc162d927a134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a993c9a3218253ca61f4249fcff342b91"><td class="memItemLeft" align="right" valign="top"><a id="a993c9a3218253ca61f4249fcff342b91" name="a993c9a3218253ca61f4249fcff342b91"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (self, actual)</td></tr>
+<tr class="memitem:a993c9a3218253ca61f4249fcff342b91"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closed_loop_contoller_1_1_p_controller.html#a993c9a3218253ca61f4249fcff342b91">run</a> (self, actual)</td></tr>
+<tr class="memdesc:a993c9a3218253ca61f4249fcff342b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a new duty cycle using Kp and positional error.  <br /></td></tr>
 <tr class="separator:a993c9a3218253ca61f4249fcff342b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd1a133d86ab744e8146f1c3d7501944"><td class="memItemLeft" align="right" valign="top"><a id="abd1a133d86ab744e8146f1c3d7501944" name="abd1a133d86ab744e8146f1c3d7501944"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>set_setpoint</b> (self, new_target)</td></tr>
+<tr class="memdesc:abd1a133d86ab744e8146f1c3d7501944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new target position. <br /></td></tr>
 <tr class="separator:abd1a133d86ab744e8146f1c3d7501944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af272b130edea7d0423414141966c3686"><td class="memItemLeft" align="right" valign="top"><a id="af272b130edea7d0423414141966c3686" name="af272b130edea7d0423414141966c3686"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>set_Kp</b> (self, new_gain)</td></tr>
+<tr class="memdesc:af272b130edea7d0423414141966c3686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new Kp. <br /></td></tr>
 <tr class="separator:af272b130edea7d0423414141966c3686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981b0cc0c6f025fcc0e95e9eab755719"><td class="memItemLeft" align="right" valign="top"><a id="a981b0cc0c6f025fcc0e95e9eab755719" name="a981b0cc0c6f025fcc0e95e9eab755719"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>get_response</b> (self)</td></tr>
+<tr class="memdesc:a981b0cc0c6f025fcc0e95e9eab755719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all times and positions. <br /></td></tr>
 <tr class="separator:a981b0cc0c6f025fcc0e95e9eab755719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7391663fd357c833772d5b567df1f66"><td class="memItemLeft" align="right" valign="top"><a id="ab7391663fd357c833772d5b567df1f66" name="ab7391663fd357c833772d5b567df1f66"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>reset_response</b> (self)</td></tr>
+<tr class="memdesc:ab7391663fd357c833772d5b567df1f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the controller times, ticks, and start time. <br /></td></tr>
 <tr class="separator:ab7391663fd357c833772d5b567df1f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -138,14 +144,90 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a86494f64f20c78aa209adffe9a5a6674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="params"><dt>Parameters</dt><dd>
+<div class="textblock"><p>This class implements a ClosedLoopController for an ME405 kit. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a078d6e4098cdbafacabc162d927a134e" name="a078d6e4098cdbafacabc162d927a134e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078d6e4098cdbafacabc162d927a134e">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def ClosedLoopContoller.PController.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gain</td><td></td></tr>
-    <tr><td class="paramname">setpoint</td><td></td></tr>
+    <tr><td class="paramname">gain</td><td>Motor gain </td></tr>
+    <tr><td class="paramname">setpoint</td><td>Target encoder position </td></tr>
+    <tr><td class="paramname">times</td><td>Encoder reading times </td></tr>
+    <tr><td class="paramname">ticks</td><td>Encoder reading positions </td></tr>
+    <tr><td class="paramname">time_start</td><td>Controller start time </td></tr>
   </table>
   </dd>
 </dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a993c9a3218253ca61f4249fcff342b91" name="a993c9a3218253ca61f4249fcff342b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993c9a3218253ca61f4249fcff342b91">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def ClosedLoopContoller.PController.run </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>actual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate a new duty cycle using Kp and positional error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual</td><td>Encoder tick reading </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/ClosedLoopContoller.py</li>
 </ul>
 </div><!-- contents -->

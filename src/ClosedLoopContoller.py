@@ -20,19 +20,20 @@ TODO: A method set_Kp() to set the control gain.
 
 import pyb 
 import utime
+
 class PController:
     """! 
     This class implements a ClosedLoopController for an ME405 kit. 
     """
     
     def __init__(self, gain, target):
-        '''!
+        """!
         @param gain 		Motor gain
         @param setpoint		Target encoder position
         @param times		Encoder reading times
         @param ticks		Encoder reading positions
         @param time_start	Controller start time
-        '''
+        """
         self.gain = gain
         self.target = target
         self.times = []

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['set_5fduty_5fcycle_0',['set_duty_cycle',['../class_motor_driver_1_1_motor_driver.html#a414db9c247cbb92bcc8aefb4118bc066',1,'MotorDriver::MotorDriver']]]
+  ['get_5fkp_5finput_0',['get_kp_input',['../main_8py.html#ae5625b0c6b25bb9a6434ebddac6e5cbb',1,'main']]],
+  ['get_5fresponse_1',['get_response',['../class_closed_loop_contoller_1_1_p_controller.html#a981b0cc0c6f025fcc0e95e9eab755719',1,'ClosedLoopContoller::PController']]]
 ];
