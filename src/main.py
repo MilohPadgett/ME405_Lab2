@@ -31,12 +31,12 @@ def control_test(motor: MotorDriver, encoder: EncoderReader):
     output = 100
     actual = 0
     encoder.zero()
-    while(t-start_t < 15000 and abs(output) > 1):
+    while(t-start_t < 5000):
         encoder.read()
         actual = encoder.ticks
-        print(f"encoder ticks {encoder.ticks}")
+        #print(f"encoder ticks {encoder.ticks}")
         output = controller.run(actual)
-        print(f"{output}")
+        #print(f"{output}")
         motor.set_duty_cycle(output)
         utime.sleep_ms(10)
         t = utime.ticks_ms()
@@ -66,7 +66,8 @@ def main():
     while(1):
         control_test(motorA, encoder)
         encoder.zero()
-        print(f"encoder ticks loop {encoder.ticks}")
+        utime.sleep_ms(7000)
+        #print(f"encoder ticks loop {encoder.ticks}")
         
         
 

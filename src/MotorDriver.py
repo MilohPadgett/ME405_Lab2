@@ -68,4 +68,4 @@ class MotorDriver:
         else:
             self.en_pin(0)
 
-        print(f"Setting duty cycle to {level}")
+        #print(f"Setting duty cycle to {level}")
