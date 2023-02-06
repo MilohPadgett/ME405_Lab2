@@ -20,25 +20,31 @@ def get_kp_input():
     try:
         return float(Kp)
     except:
+        print("ERROR: Bad input")
         return get_kp_input()
 
 def control_test(motor: MotorDriver, encoder: EncoderReader):
     Kp = get_kp_input()
-    controller = PController(Kp,5000.0)
+    controller = PController(Kp,1050.0)
     start_t = utime.ticks_ms()
     t= start_t
     output = 100
-    while(t-start_t < 5000 and abs(output) > 10):
+    actual = 0
+    encoder.zero()
+    while(t-start_t < 15000 and abs(output) > 1):
         encoder.read()
         actual = encoder.ticks
+        print(f"encoder ticks {encoder.ticks}")
         output = controller.run(actual)
         print(f"{output}")
         motor.set_duty_cycle(output)
         utime.sleep_ms(10)
         t = utime.ticks_ms()
+    motor.set_duty_cycle(0);
     u2 = pyb.UART(2, baudrate=115200)
     
     controller.get_response()
+    controller.reset_response()
 
 
 def main():
@@ -57,8 +63,12 @@ def main():
     
     #Create encoder driver object
     encoder = EncoderReader(ch1,ch2,tim8)
-
-    control_test(motorA, encoder)
+    while(1):
+        control_test(motorA, encoder)
+        encoder.zero()
+        print(f"encoder ticks loop {encoder.ticks}")
+        
+        
 
 if __name__ == "__main__":
     main()

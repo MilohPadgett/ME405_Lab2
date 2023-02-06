@@ -73,4 +73,7 @@ class EncoderReader:
         """!
         Set's ticks to zero
         """
-        self.ticks=0
+        self.ticks = 0
+        self.prev = 0
+        self.cur = 0
+        self.timer.counter(0)

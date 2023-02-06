@@ -11,13 +11,15 @@ from matplotlib import pyplot
 
 
 #Send characters through USB and read output
-def steptest(Kp):
-    kp = bytes(Kp, 'utf-8')
+def steptest(Kp: str):
     data = []
-    with serial.Serial ('COMx', 115200) as s_port:
-           s_port.write (kp)                             #send characters
+    with serial.Serial ('/dev/ttyACM0', 115200) as s_port:
+           print(f"Sending kp {Kp}")
+           s_port.write(Kp.encode())                             #send characters
            while(s_port.readline()):
-                 line = s_port.readline().split (b',')   #read data
+                 data = s_port.readline()
+                 print(data.decode())
+                 line = data.split (b',')   #read data
                  data.append(line)
     return data
 
@@ -38,11 +40,12 @@ def plotresponse(data):
     #Plot step response
     pyplot.plot(Time, Position)
     pyplot.xlabel('Time')
-    pyplot.ylabel('Position)
+    pyplot.ylabel('Position')
 
 def main():
-    steptest(Kp)
-    plotresponse()
+    Kp = .035
+    data = steptest(str(Kp))
+    plotresponse(data)
 
 if __name__ == "__main__":
     main()
