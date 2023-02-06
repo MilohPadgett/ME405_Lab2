@@ -1,5 +1,5 @@
 """!
-@file lab1.py
+@file ClosedLoopController.py
 This file contains a class to implement a Closed Loop P Controller
 
 TODO: Create a constructor which sets the proportional gain, initial setpoint, and other necessary parameters.
