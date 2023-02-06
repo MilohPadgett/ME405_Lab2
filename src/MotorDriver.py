@@ -6,7 +6,7 @@ with varying duty cycle to control a DC motor.
 TODO: Create a class called MotorDriver which allows a user
       to initialize enabable, in1, in2, and timer pins to control
       a motor with. As well as set the duty cycle of the initialized
-      motor to controll speed. 
+      motor to control speed. 
 
 @author Miloh Padgett, Tristan Cavarno, Jon Abraham
 @date 30-Jan-2023 Original File
@@ -15,7 +15,7 @@ import pyb
 
 class MotorDriver:
     """! 
-    This class implements a motor driver for an ME405 kit. 
+    This class implements a MotorDriver for an ME405 kit. 
     """
 
     def __init__ (self, en_pin: pyb.Pin, in1pin: pyb.Pin, in2pin: pyb.Pin, timer: pyb.Timer, polarity: bool):
