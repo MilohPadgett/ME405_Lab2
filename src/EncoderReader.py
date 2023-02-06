@@ -1,8 +1,6 @@
 """!
 @file EncoderReader.py
-This file contains code which uses PWM output
-with varying duty cycle to control a DC motor.
-It also uses timer channels for encoder measurements.
+This file contains code which uses uses timer channels for encoder measurements.
 
 TODO: Create a class called EncoderReader which allows a user 
       to inialize board pins for use with a motor_encoder, as well 
@@ -15,26 +13,26 @@ import pyb
 
 class EncoderReader:
     """! 
-    This class implements a EncoderReader for an ME405 kit. 
+    This class implements an EncoderReader for an ME405 kit. 
     """
 
     def __init__ (self,enc_A,enc_B,timer):
         """! 
-        Creates a EncoderReader by initializing GPIO
+        Creates an EncoderReader by initializing GPIO
         pins and turning off the motor for safety. 
         @param en_A     Pin for encoder channel A
         @param en_A     Pin for encoder channel B
-        @param timer    timer used for counting 
+        @param timer    Timer used for counting 
         """
 
-        print ("Creating a EncoderReader")
+        print ("Creating an EncoderReader")
 
         #Set interal pins and timer
         self.en_A = enc_A
         self.en_B = enc_B
         self.timer = timer
 
-        #Setup channels.
+        #Set up channels.
         self.tim4_ch1 = timer.channel(1,mode = pyb.Timer.ENC_AB,pin = self.en_A)
         self.tim4_ch2 = timer.channel(2,mode = pyb.Timer.ENC_AB,pin = self.en_B)
 
@@ -71,7 +69,7 @@ class EncoderReader:
 
     def zero(self):
         """!
-        Set's ticks to zero
+        Sets ticks to zero
         """
         self.ticks = 0
         self.prev = 0
