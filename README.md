@@ -15,8 +15,8 @@ Step response tests were performed for various values of *K<sub>P</sub>* to help
 is to maximize the speed of the motor while minimizing overshoot, oscillation, and steady-state error. The results of this
 testing can be seen below. 
 
-![Figure 1. Underdamped Step Response](overdamped_k3.png)
+![Figure 1. Underdamped Step Response](overdamped_k_3.png)
 
-![Figure 2. Overdamped Step Response](underdamped_k1.png)
+![Figure 2. Overdamped Step Response](underdamped_k_01.png)
 
 ![Figure 3. Well-Performing Step Response](best_performance_k_029.png)
