@@ -108,13 +108,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a993c9a3218253ca61f4249fcff342b91"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closed_loop_contoller_1_1_p_controller.html#a993c9a3218253ca61f4249fcff342b91">run</a> (self, actual)</td></tr>
 <tr class="memdesc:a993c9a3218253ca61f4249fcff342b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a new duty cycle using Kp and positional error.  <br /></td></tr>
 <tr class="separator:a993c9a3218253ca61f4249fcff342b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1a133d86ab744e8146f1c3d7501944"><td class="memItemLeft" align="right" valign="top"><a id="abd1a133d86ab744e8146f1c3d7501944" name="abd1a133d86ab744e8146f1c3d7501944"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>set_setpoint</b> (self, new_target)</td></tr>
-<tr class="memdesc:abd1a133d86ab744e8146f1c3d7501944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new target position. <br /></td></tr>
+<tr class="memitem:abd1a133d86ab744e8146f1c3d7501944"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closed_loop_contoller_1_1_p_controller.html#abd1a133d86ab744e8146f1c3d7501944">set_setpoint</a> (self, new_target)</td></tr>
+<tr class="memdesc:abd1a133d86ab744e8146f1c3d7501944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new target position.  <br /></td></tr>
 <tr class="separator:abd1a133d86ab744e8146f1c3d7501944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af272b130edea7d0423414141966c3686"><td class="memItemLeft" align="right" valign="top"><a id="af272b130edea7d0423414141966c3686" name="af272b130edea7d0423414141966c3686"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>set_Kp</b> (self, new_gain)</td></tr>
-<tr class="memdesc:af272b130edea7d0423414141966c3686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new Kp. <br /></td></tr>
+<tr class="memitem:af272b130edea7d0423414141966c3686"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closed_loop_contoller_1_1_p_controller.html#af272b130edea7d0423414141966c3686">set_Kp</a> (self, new_gain)</td></tr>
+<tr class="memdesc:af272b130edea7d0423414141966c3686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new Kp.  <br /></td></tr>
 <tr class="separator:af272b130edea7d0423414141966c3686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981b0cc0c6f025fcc0e95e9eab755719"><td class="memItemLeft" align="right" valign="top"><a id="a981b0cc0c6f025fcc0e95e9eab755719" name="a981b0cc0c6f025fcc0e95e9eab755719"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>get_response</b> (self)</td></tr>
@@ -221,6 +219,78 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">actual</td><td>Encoder tick reading </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af272b130edea7d0423414141966c3686" name="af272b130edea7d0423414141966c3686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af272b130edea7d0423414141966c3686">&#9670;&#160;</a></span>set_Kp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def ClosedLoopContoller.PController.set_Kp </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>new_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a new Kp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_gain</td><td>the new gain to be set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd1a133d86ab744e8146f1c3d7501944" name="abd1a133d86ab744e8146f1c3d7501944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1a133d86ab744e8146f1c3d7501944">&#9670;&#160;</a></span>set_setpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def ClosedLoopContoller.PController.set_setpoint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>new_target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a new target position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_target</td><td>the new target tick value to reach </td></tr>
   </table>
   </dd>
 </dl>
