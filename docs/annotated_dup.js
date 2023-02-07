@@ -1,7 +1,7 @@
 var annotated_dup =
 [
-    [ "ClosedLoopContoller", null, [
-      [ "PController", "class_closed_loop_contoller_1_1_p_controller.html", "class_closed_loop_contoller_1_1_p_controller" ]
+    [ "ClosedLoopController", null, [
+      [ "PController", "class_closed_loop_controller_1_1_p_controller.html", "class_closed_loop_controller_1_1_p_controller" ]
     ] ],
     [ "EncoderReader", null, [
       [ "EncoderReader", "class_encoder_reader_1_1_encoder_reader.html", "class_encoder_reader_1_1_encoder_reader" ]

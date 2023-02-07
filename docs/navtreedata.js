@@ -41,7 +41,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_encoder_reader_8py.html"
+"_closed_loop_controller_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

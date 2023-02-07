@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['encoderreader_2epy_0',['EncoderReader.py',['../_encoder_reader_8py.html',1,'']]]
+  ['closedloopcontroller_2epy_0',['ClosedLoopController.py',['../_closed_loop_controller_8py.html',1,'']]]
 ];
